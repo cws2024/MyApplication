@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@id/main"
+        android:layout_width="134dp"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/satellite" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="134dp"
+        android:layout_height="125dp"
+        android:src="@drawable/ROCKET"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/ignore"
+        android:layout_width="134dp"
+        android:layout_height="125dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/marsrover"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flight"
+        android:layout_alignBottom="@+id/icon"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rover"
+        android:layout_alignBottom="@+id/icon"
+        android:textSize="20dp"
+        android:layout_alignLeft="@+id/ignore"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="-30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Space Station"
+        android:layout_alignBottom="@+id/icon"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="-30dp"/>
+
+    <TextView
+        android:layout_width="143dp"
+        android:layout_height="87dp"
+        android:layout_alignBottom="@id/icon"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="-22dp"
+        android:layout_marginBottom="-172dp"
+        android:background="#E72A1D"
+        android:paddingTop="20dp"
+        android:text="DCA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="143dp"
+        android:layout_height="87dp"
+        android:layout_alignBottom="@id/icon"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="-172dp"
+        android:layout_toEndOf="@id/icon"
+        android:background="#53BF57"
+        android:paddingTop="20dp"
+        android:text="MARS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+
+        android:id="@+id/Center"
+        android:layout_width="159dp"
+        android:layout_height="158dp"
+        android:layout_alignBottom="@id/ignore"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-202dp"
+        android:background="@color/white"
+        android:contentDescription="TODO"
+        android:src="@drawable/square"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <ImageView
+        android:layout_width="264dp"
+        android:layout_height="96dp"
+        android:layout_alignBottom="@id/ignore"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-211dp"
+        android:layout_marginBottom="-170dp"
+        android:layout_toStartOf="@id/Center"
+        android:contentDescription="TODO"
+        android:src="@drawable/arrows"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One Way"
+        android:layout_alignBottom="@id/Center"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:paddingStart="5dp"
+        android:textSize="30sp"
+        android:layout_marginBottom="-100dp"
+        android:textColor="@color/black"
+        android:id="@+id/OneWay"
+        android:background="#03A9F4"
+        tools:ignore="HardcodedText" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingStart="10dp"
+        android:layout_marginBottom="-100dp"
+        android:layout_alignBottom="@id/Center"
+        android:layout_marginTop="10dp"
+        android:background="#2196F3"
+        android:layout_toEndOf="@+id/OneWay"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-70dp"
+        android:background="#F0B70C"
+        android:text="Traveller"
+        android:layout_marginStart="10dp"
+        android:paddingStart="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_alignBottom="@id/OneWay"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+
+
+
+
+</RelativeLayout>
